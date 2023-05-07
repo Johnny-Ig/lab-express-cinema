@@ -1,0 +1,22 @@
+<div class="datailsLetter">
+
+  <h2>Detalles de la pelicula</h2>
+</div>
+<div id="containerDetails">
+  <div>
+    <h3>Title:{{this.infoMovie.title}}</h3>
+    <h3>Director:</h3>
+    <h4>{{this.infoMovie.director}}</h4>
+    <img src="{{this.infoMovie.image}}" alt="movies" width="250px" />
+     <h3>Cast:</h3> 
+    {{#each this.infoMovie.stars}}
+      <li>{{this}}</li>
+    {{/each}}
+
+    <p><h3>Description:</h3>{{this.infoMovie.description}}</p>
+    <p><h3>Showtimes:</h3>{{this.infoMovie.showtimes}}</p>
+
+    <a href="/movies">Go back</a>
+ 
+
+</div>
